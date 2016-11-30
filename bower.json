@@ -1,7 +1,16 @@
 {
+<<<<<<< HEAD
   "name": "kaza",
   "private": "true",
   "devDependencies": {
     "ionic": "driftyco/ionic-bower#1.3.2"
   }
 }
+=======
+  "name": "Kaza App",
+  "private": "false",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.3.1"
+  }
+}
+>>>>>>> aebc7459bd56aba6b28a70f1980fea1e0cd4c5c2

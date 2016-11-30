@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.kaza739957" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>kaza</name>
-  <description>
-        An Ionic Framework and Cordova project.
+<widget id="com.ionicframework.kaza739957" version="0.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Kaza App</name>
+    <description>
+        Sistema integrado de hardware e software para automação residencial
     </description>
-  <author email="you@example.com" href="http://example.com.com/">
-      Your Name Here
+    <author email="cleiton7souza@gmail.com" href="http://cleitonsouza.com">
+      Cleiton Souza
     </author>
   <content src="index.html"/>
   <access origin="*"/>

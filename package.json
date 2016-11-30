@@ -1,7 +1,7 @@
 {
   "name": "kaza",
   "version": "1.1.1",
-  "description": "kaza: An Ionic project",
+  "description": "Sistema integrado de hardware e software para automação residencial",
   "dependencies": {
     "bower": "^1.8.0",
     "gulp": "^3.9.1",
