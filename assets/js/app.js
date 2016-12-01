@@ -2,7 +2,8 @@
     'use strict';
 
     angular.module('kaza', [
-            'ionic'
+            'ionic',
+            'restangular'
         ])
 
         .run(function($ionicPlatform) {
@@ -15,6 +16,20 @@
                 if (window.StatusBar) {
                     StatusBar.styleDefault();
                 }
+            });
+        })
+
+        .config(function(RestangularProvider) {
+            RestangularProvider.setBaseUrl('http://kaza.hogenn.com/');
+        })
+
+        .run(function(Restangular) {
+            Restangular.setErrorInterceptor(function(response, deferred, responseHandler) {
+                if (response.status === 404) {
+                    return false;
+                }
+
+                return true;
             });
         })
     ;
