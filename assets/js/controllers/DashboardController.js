@@ -5,7 +5,13 @@
         .module('kaza')
         .controller('DashboardController', DashboardController);
 
-        function DashboardController(Api) {
+        function DashboardController($ionicPush, Api) {
+            $ionicPush.register().then(function(t) {
+              return $ionicPush.saveToken(t);
+            }).then(function(t) {
+              console.log('Token saved:', t.token);
+            });
+
             var vm = this;
             vm.intensidade = 50;
 

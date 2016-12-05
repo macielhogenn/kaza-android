@@ -3,8 +3,29 @@
 
     angular.module('kaza', [
             'ionic',
+            'ionic.cloud',
             'restangular'
         ])
+
+        .config(function($ionicCloudProvider) {
+            $ionicCloudProvider.init({
+                "core": {
+                    "app_id": "c9285cb8"
+                },
+                "push": {
+                    "sender_id": "53130620467",
+                    "pluginConfig": {
+                        "ios": {
+                            "badge": true,
+                            "sound": true
+                        },
+                        "android": {
+                            "iconColor": "#343434"
+                        }
+                    }
+                }
+            });
+        })
 
         .run(function($ionicPlatform) {
             $ionicPlatform.ready(function() {
