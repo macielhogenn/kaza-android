@@ -41,7 +41,8 @@
         })
 
         .config(function(RestangularProvider) {
-            RestangularProvider.setBaseUrl('http://kaza.hogenn.com/');
+            RestangularProvider.setBaseUrl('http://10.60.30.14:8080/');
+            // RestangularProvider.setBaseUrl('http://kaza.hogenn.com/');
         })
 
         .run(function(Restangular) {

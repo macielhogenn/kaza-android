@@ -15,20 +15,20 @@
             var vm = this;
             vm.intensidade = 50;
 
-            vm.acionarLampada = function() {
-                Api.acionarLampada();
+            vm.acionarLampada = function(param) {
+                Api.acionarLampada(param);
             };
 
             vm.intensidadeLampada = function() {
                 Api.intensidadeLampada(vm.intensidade);
             };
 
-            vm.acionarPortao = function() {
-                Api.acionarPortao();
+            vm.acionarPortao = function(param) {
+                Api.acionarPortao(param);
             };
 
-            vm.acionarAlarme = function() {
-                Api.acionarAlarme();
+            vm.acionarAlarme = function(param) {
+                Api.acionarAlarme(param);
             };
         }
 })();
