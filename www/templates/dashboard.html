@@ -1,0 +1,48 @@
+<ion-view view-title="Kaza app">
+    <ion-content class="padding">
+        <div class="row">
+            <div class="col-40">
+                <button ng-click="Dashboard.acionarLampada(0)" class="button button-block button-calm ion-ios-lightbulb-outline">
+                    Desligar
+                </button>
+            </div>
+            <div class="col-10"></div>
+            <div class="col-50">
+                <button ng-click="Dashboard.acionarLampada(1)" class="button button-block button-calm ion-ios-lightbulb">
+                    Ligar
+                </button>
+            </div>
+        </div>
+        <div class="item range">
+            <i class="icon ion-ios-lightbulb-outline"></i>
+            <input type="range" ng-model="Dashboard.intensidade" ng-change="Dashboard.intensidadeLampada()" ng-model-options="{ debounce: 300 }">
+            <i class="icon ion-ios-lightbulb"></i>
+        </div>
+        <div class="row">
+            <div class="col-40">
+                <button ng-click="Dashboard.acionarPortao(0)" class="button button-block button-royal ion-android-car">
+                    Desligar
+                </button>
+            </div>
+            <div class="col-10"></div>
+            <div class="col-50">
+                <button ng-click="Dashboard.acionarPortao(1)" class="button button-block button-royal ion-android-car">
+                    Ligar
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-40">
+                <button ng-click="Dashboard.acionarAlarme(0)" class="button button-block button-assertive ion-ios-bell-outline">
+                    Desligar
+                </button>
+            </div>
+            <div class="col-10"></div>
+            <div class="col-50">
+                <button ng-click="Dashboard.acionarAlarme(1)" class="button button-block button-assertive ion-ios-bell">
+                    Ligar
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
